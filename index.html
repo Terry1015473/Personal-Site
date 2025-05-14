@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">77LifeStation</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <h1>Hello, I'm 77</h1><br />
+      <h2>A passionate developer focused on creating meaningful digital experience</h2>
+      <a href="#projects" class="hero-button">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Sections -->
+  <section id="about" class="section">
+    <h1 class="section-title">About Me</h1>
+
+    <div class="about-container">
+        <p class="about-description">
+        I am a passionate developer with a strong interest in building clean, user-friendly digital experiences.
+        </p>
+
+        <h2 class="subheading">Education</h2>
+        <div class="experience-block">
+        <div class="experience-content">
+            <p>
+            National Tsing Hua University Master Degree<br />
+            2024 - 2026<br />
+            Institute of Information Systems and Applications
+            </p>
+        </div>
+        </div>
+        <div class="experience-block">
+        <div class="experience-content">
+            <p>
+            National Cheng Kung University Bachelor's Degree<br />
+            2020 - 2024<br />
+            Department of Photonics
+            </p>
+        </div>
+        </div>
+
+        <h2 class="subheading">Work Experience</h2>
+        <div class="experience-block">
+        <div class="experience-content">
+            <p>
+            Epistar RD Engineer Internship<br />
+            2023.07 - 2024.01<br />
+            RD Engineer - Responsible for competitive product analysis and chip defect automatic detection system.
+            </p>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h1 class="section-title">Projects</h1>
+    <div class="projects-container">
+
+        <h2 class="subheading">Team Projects</h2>
+        <div class="project-grid">
+        <div class="project-card" onclick="openModal('team1')">
+            <img src="1.jpg" alt="Team Project 1" />
+            <p>Collaborative web app for event scheduling.</p>
+        </div>
+        <div class="project-card" onclick="openModal('team1')">
+            <img src="3.jpg" alt="Team Project 1" />
+            <p>Collaborative web app for event scheduling.</p>
+        </div>
+        <!-- 可再添加更多卡片 -->
+        </div>
+
+        <h2 class="subheading">Personal Work</h2>
+        <div class="project-grid">
+        <div class="project-card" onclick="openModal('personal1')">
+            <img src="2.jpg" alt="Personal Project 1" />
+            <p>My personal blog built with Next.js.</p>
+        </div>
+        <div class="project-card" onclick="openModal('personal1')">
+            <img src="3.jpg" alt="Personal Project 1" />
+            <p>Collaborative web app for event scheduling.</p>
+        </div>
+        <!-- 更多卡片 -->
+        </div>
+
+    </div>
+  </section>
+
+    <!-- Modal 區塊 -->
+    <div id="projectModal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+    </div>
+
+    <!-- Notes Section -->
+    <section id="notes" style="padding: 60px 20px; text-align: center; background: #f9f9f9;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 40px;">Notes</h1>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 100px;">
+
+        <!-- Japanese Notes -->
+        <a href="https://terry1015473.github.io/nihongo_no-to/" target="_blank" style="text-decoration: none; color: inherit;">
+        <div style="width: 300px; padding: 20px; border-radius: 16px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
+            <img src="https://img.icons8.com/color/96/japan.png" alt="Japanese Icon" style="width: 60px; height: 60px; margin-bottom: 20px;" />
+            <h2 style="margin-bottom: 10px;">Japanese Learning Notes</h2>
+            <p style="font-size: 0.95rem; color: #555;">My study notes on grammar, vocabulary, and kanji as I prepare for the JLPT.</p>
+        </div>
+        </a>
+
+        <!-- CS Notes -->
+        <a href="https://terry1015473.github.io/404ErrorPage/" target="_blank" style="text-decoration: none; color: inherit;">
+        <div style="width: 300px; padding: 20px; border-radius: 16px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
+            <img src="https://img.icons8.com/color/96/code.png" alt="CS Icon" style="width: 60px; height: 60px; margin-bottom: 20px;" />
+            <h2 style="margin-bottom: 10px;">Computer Science Notes</h2>
+            <p style="font-size: 0.95rem; color: #555;">Concepts and summaries from computer vision, algorithms, and system design.</p>
+        </div>
+        </a>
+
+        <!-- Life Notes -->
+        <a href="https://terry1015473.github.io/404ErrorPage/" target="_blank" style="text-decoration: none; color: inherit;">
+        <div style="width: 300px; padding: 20px; border-radius: 16px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
+            <img src="https://img.icons8.com/?size=100&id=107599&format=png&color=000000" alt="Volleyball Player Icon" style="width: 60px; height: 60px; margin-bottom: 20px;" />
+            <h2 style="margin-bottom: 10px;">My Life Notes</h2>
+            <p style="font-size: 0.95rem; color: #555;">The place where record my daily life or something interesting.</p>
+        </div>
+        </a>
+
+    </div>
+    </section>
+    <style>
+        #notes a div:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+    </style>
+
+  <section id="contact" class="section">
+    <h1>Contact</h1>
+    <p>Feel free to reach out via email or connect on social media.</p><br />
+    <p>Email: terry67584621@gmail.com<p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const modal = document.getElementById("projectModal");
+    const modalBody = document.getElementById("modalBody");
+
+    const projectDetails = {
+        team1: `
+        <h2>Team Project: Event Scheduler</h2>
+        <img src="1.jpg" style="width:100%; border-radius:8px;" />
+        <p>This is a collaborative scheduling app built using <strong>React</strong> and <strong>Firebase</strong>. It allows users to create, join, and organize events in real-time.</p>
+        `,
+        personal1: `
+        <h2>Personal Blog</h2>
+        <img src="2.jpg" style="width:100%; border-radius:8px;" />
+        <p>This blog was created using <strong>Next.js</strong> and deployed with <strong>Vercel</strong>. I write about tech, tutorials, and personal reflections.</p>
+        `
+    };
+
+    function openModal(id) {
+        modalBody.innerHTML = projectDetails[id];
+        modal.style.display = "block";
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+  </script>
+</body>
+</html>
