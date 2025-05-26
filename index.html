@@ -36,7 +36,7 @@
 
     <div class="about-container">
         <p class="about-description">
-        I am a passionate developer with a strong interest in building clean, user-friendly digital experiences.
+        A passionate student with a strong interest in building clean, user-friendly digital experiences.
         </p>
 
         <h2 class="subheading">Education</h2>
@@ -44,7 +44,7 @@
         <div class="experience-content">
             <p>
             National Tsing Hua University Master Degree<br />
-            2024 - 2026<br />
+            2024 - So far<br />
             Institute of Information Systems and Applications
             </p>
         </div>
@@ -79,27 +79,22 @@
         <h2 class="subheading">Team Projects</h2>
         <div class="project-grid">
         <div class="project-card" onclick="openModal('team1')">
-            <img src="1.jpg" alt="Team Project 1" />
-            <p>Collaborative web app for event scheduling.</p>
-        </div>
-        <div class="project-card" onclick="openModal('team1')">
-            <img src="3.jpg" alt="Team Project 1" />
-            <p>Collaborative web app for event scheduling.</p>
+            <img src="stri2oke.jpg" alt="Team Project 1" />
+            <p style="font-size: 1.5rem;">An award-winning final project.</p>
         </div>
         <!-- 可再添加更多卡片 -->
         </div>
-
         <h2 class="subheading">Personal Work</h2>
         <div class="project-grid">
         <div class="project-card" onclick="openModal('personal1')">
-            <img src="2.jpg" alt="Personal Project 1" />
-            <p>My personal blog built with Next.js.</p>
-        </div>
-        <div class="project-card" onclick="openModal('personal1')">
-            <img src="3.jpg" alt="Personal Project 1" />
-            <p>Collaborative web app for event scheduling.</p>
+            <img src="project1.jpg" alt="Personal Project 1" />
+            <p style="font-size: 1.5rem;">Private volleyball scheduling system</p>
         </div>
         <!-- 更多卡片 -->
+        <div class="project-card" onclick="openModal('personal1')">
+            <img src="project1.jpg" alt="Personal Project 1" />
+            <p style="font-size: 1.5rem;">Private volleyball scheduling system</p>
+        </div>
         </div>
 
     </div>
@@ -114,8 +109,8 @@
     </div>
 
     <!-- Notes Section -->
-    <section id="notes" style="padding: 60px 20px; text-align: center; background: #f9f9f9;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 40px;">Notes</h1>
+    <section id="notes" class="section" style="padding: 60px 20px; text-align: center; background: #f9f9f9;">
+    <h1 class="section-title">Notes</h1>
     
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 100px;">
 
@@ -142,7 +137,7 @@
         <div style="width: 300px; padding: 20px; border-radius: 16px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
             <img src="https://img.icons8.com/?size=100&id=107599&format=png&color=000000" alt="Volleyball Player Icon" style="width: 60px; height: 60px; margin-bottom: 20px;" />
             <h2 style="margin-bottom: 10px;">My Life Notes</h2>
-            <p style="font-size: 0.95rem; color: #555;">The place where record my daily life or something interesting.</p>
+            <p style="font-size: 0.95rem; color: #555;">The place where record my daily life events or something interesting.</p>
         </div>
         </a>
 
@@ -168,17 +163,33 @@
   <script>
     const modal = document.getElementById("projectModal");
     const modalBody = document.getElementById("modalBody");
-
     const projectDetails = {
         team1: `
-        <h2>Team Project: Event Scheduler</h2>
-        <img src="1.jpg" style="width:100%; border-radius:8px;" />
-        <p>This is a collaborative scheduling app built using <strong>React</strong> and <strong>Firebase</strong>. It allows users to create, join, and organize events in real-time.</p>
+        <h1>Team Project: Roguelike Game Stri2oke</h1>
+        <img src="stri2oke.jpg" style="width:100%; border-radius:8px" />
+        <p style="font-size: 1.5rem">An <strong>award-winning</strong> final project at the "Introduction to Game Programing" lesson. Developed by the team came from <strong>National Tsing Hua University's students</strong>.</p></ br>
+        <p style="font-size: 1.5rem"><Strong>Team Leader: 連崇安</Strong></p></ br>
+        <p style="font-size: 1.5rem"><strong>Teammates: 陳永錩、洪聖祥、陳聖和、楊其勳</strong></p>
+        <a href="https://play.unity.com/en/games/0165701f-38b7-4367-b089-dea650bda287/stri2oke">
+          <button class="project-button">
+            Play Now!
+          </button>
+        </a>
         `,
         personal1: `
-        <h2>Personal Blog</h2>
-        <img src="2.jpg" style="width:100%; border-radius:8px;" />
-        <p>This blog was created using <strong>Next.js</strong> and deployed with <strong>Vercel</strong>. I write about tech, tutorials, and personal reflections.</p>
+        <h2>Personal Project</h2>
+        <img src="project1.jpg" style="width:100%; border-radius:8px;" />
+        <p>This system is used for private scheduling of our volleyball team which made from<strong>Vite React</strong> and deployed with <strong>Firebase</strong></p>
+        <a href="https://czj-volleyball-system.netlify.app/">
+          <button class="project-button">
+            System Link!
+          </button>
+        </a>
+        `,
+        personal2:`
+        <h2>Personal Project</h2>
+        <img src="project1.jpg" style="width:100%; border-radius:8px;" />
+        <p>This is a collaborative scheduling app built using
         `
     };
 
