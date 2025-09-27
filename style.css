@@ -105,11 +105,11 @@ body {
 }
 /* Background slider animation (you can replace URLs) */
 @keyframes bgSlider {
-  0%   { background-image: url('1.jpg'); }
+  0%   { background-image: url('LYT.png'); }
   25%  { background-image: url('2.jpg'); }
-  50%  { background-image: url('3.jpg'); }
+  50%  { background-image: url('LYT.png'); }
   75%  { background-image: url('4.jpg'); }
-  100% { background-image: url('5.jpg'); }
+  100% { background-image: url('LYT.png'); }
 }
 
 /* Sections */
